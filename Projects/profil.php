@@ -1,3 +1,12 @@
+<?php 
+                    session_start();
+                    ini_set('display_errors', 'on');
+                    include 'connectdb.php';
+                    $id = $_GET['id'];
+                    $sql = "SELECT * FROM user WHERE iduser = $id";
+                    $result = $db->query($sql);
+                    $row = $result->fetch();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,15 +44,6 @@
                 <div>
                     <img src="./assets/images/card.png" alt="profil">
                 </div>
-                <?php 
-                    session_start();
-                    ini_set('display_errors', 'on');
-                    include 'connectdb.php';
-                    $id = $_GET['id'];
-                    $sql = "SELECT * FROM user WHERE iduser = $id";
-                    $result = $db->query($sql);
-                    $row = $result->fetch();
-                ?>
                 <div>
                     <p>Pseudo: <span id="pseudo"><?php echo $row['pseudo'] ?></span></p>
                     <p>Full Name: <span id="name"><?php echo $row['fullName'] ?></span></p>
