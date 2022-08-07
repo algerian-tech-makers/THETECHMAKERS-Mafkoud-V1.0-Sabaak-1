@@ -1,0 +1,873 @@
+@font-face {
+  font-family: "fauna_oneregular";
+  src: url("../assets/fonts/faunaone-regular-webfont.eot");
+  src: url("../assets/fonts/faunaone-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/faunaone-regular-webfont.woff2") format("woff2"), url("../assets/fonts/faunaone-regular-webfont.woff") format("woff"), url("../assets/fonts/faunaone-regular-webfont.ttf") format("truetype"), url("../assets/fonts/faunaone-regular-webfont.svg#fauna_oneregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+body {
+  font-family: "fauna_oneregular", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  height: 150px;
+  width: 100%;
+}
+header div.container {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 150px;
+  padding: 0px 50px;
+}
+header div.container div.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+header div.container div.logo a {
+  text-decoration: none;
+}
+header div.container div.logo a p {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #550f4c;
+  margin-right: 10px;
+}
+header div.container nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+header div.container nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header div.container nav ul li:not(:last-child) {
+  margin-right: 50px;
+}
+header div.container nav ul li:nth-child(1) a {
+  color: #550f4c;
+}
+header div.container nav ul li:nth-child(2) a {
+  color: #fff;
+  text-decoration: none;
+  background-color: #550f4c;
+  padding: 20px 70px;
+  border-radius: 50px;
+  border: #550f4c 1px solid;
+}
+header div.container nav ul li:nth-child(2) a:hover {
+  background-color: #fff;
+  color: #550f4c;
+  border: #550f4c 1px solid;
+}
+header div.container nav ul li:nth-child(3) a {
+  color: #550f4c;
+}
+
+main {
+  width: 100%;
+}
+main div.dash {
+  height: 600px;
+  background-color: #550f4c;
+  border-radius: 0 50px 0 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+main div.dash div:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+main div.dash div:nth-child(1) h1 {
+  font-size: 7rem;
+  width: 100%;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+}
+main div.dash div:nth-child(2) form input {
+  padding: 15px;
+  height: 25px;
+}
+main div.dash div:nth-child(2) form input:nth-child(1) {
+  border-radius: 50px 0px 0px 50px;
+}
+main div.dash div:nth-child(2) form select {
+  border-radius: 0px 50px 50px 0px;
+  width: 203px;
+  border: none;
+  height: 59px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("../assets/images/select.png") 96%/15% no-repeat #fff;
+  padding: 0px 0px 0px 20px;
+}
+main div.dash div:nth-child(2) form button {
+  color: #fff;
+  text-decoration: none;
+  background-color: #276dd0;
+  padding: 22px 75px;
+  border-radius: 50px;
+  border: #550f4c 1px solid;
+}
+main div.dash div:nth-child(2) form button:hover {
+  background-color: #fff;
+  color: #550f4c;
+  border: #550f4c 1px solid;
+}
+main div.main h2 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+  color: #550f4c;
+  margin: 50px 0;
+}
+main div.missing_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main div.missing_form div h1 {
+  color: #550f4c;
+}
+main div.missing_form div.form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+main div.missing_form div.form form {
+  color: #550f4c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main div.missing_form div.form form div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  width: 100%;
+}
+main div.missing_form div.form form div:nth-child(1) div label {
+  width: 25%;
+}
+main div.missing_form div.form form div:nth-child(1) div input[type=text] {
+  padding: 15px;
+  height: 25px;
+  border-radius: 50px;
+  border: #550f4c 1px solid;
+  width: 320px;
+}
+main div.missing_form div.form form div:nth-child(1) div input[type=text]:not(:last-child) {
+  margin-right: 55px;
+}
+main div.missing_form div.form form div:nth-child(2) div input[type=text],
+main div.missing_form div.form form div:nth-child(2) div input[type=number],
+main div.missing_form div.form form div:nth-child(2) div input[type=date] {
+  padding: 15px;
+  height: 25px;
+  border-radius: 50px;
+  border: #550f4c 1px solid;
+  width: 125px;
+}
+main div.missing_form div.form form div:nth-child(2) div select {
+  border-radius: 50px;
+  width: 25%;
+  height: 59px;
+  border: 1px solid #550f4c;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("../assets/images/select.png") 85%/15% no-repeat #fff;
+  padding: 0px 0px 0px 20px;
+}
+main div.missing_form div.form form div:nth-child(3) input[type=text], main div.missing_form div.form form div:nth-child(4) input[type=text] {
+  padding: 15px;
+  height: 25px;
+  border-radius: 50px;
+  border: #550f4c 1px solid;
+  width: 860px;
+}
+main div.missing_form div.form form div:nth-child(5) div input[type=text] {
+  padding: 15px;
+  height: 25px;
+  border-radius: 50px;
+  border: #550f4c 1px solid;
+  width: 350px;
+}
+main div.missing_form div.form form div:nth-child(5) div select {
+  border-radius: 50px;
+  width: 382px;
+  height: 59px;
+  border: 1px solid #550f4c;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("../assets/images/select.png") 94%/6% no-repeat #fff;
+  padding: 0px 0px 0px 20px;
+}
+main div.missing_form div.form form div:nth-child(6) div:nth-child(1) input[type=text] {
+  padding: 15px;
+  height: 25px;
+  border-radius: 50px;
+  border: #550f4c 1px solid;
+  width: 350px;
+}
+main div.missing_form div.form form div:nth-child(6) div:nth-child(2) select {
+  border-radius: 50px;
+  width: 100%;
+  height: 59px;
+  border: 1px solid #550f4c;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("../assets/images/select.png") 93%/6% no-repeat #fff;
+  padding: 0px 0px 0px 20px;
+}
+main div.missing_form div.form form div:nth-child(7) div:nth-child(1) input[type=date] {
+  padding: 15px;
+  height: 25px;
+  border-radius: 50px;
+  border: #550f4c 1px solid;
+  width: 350px;
+}
+main div.missing_form div.form form div:nth-child(7) div:nth-child(2) input[type=tel] {
+  padding: 15px;
+  height: 25px;
+  border-radius: 50px;
+  border: #550f4c 1px solid;
+  width: 350px;
+}
+main div.missing_form div.form form div:nth-child(8) div:nth-child(1) input[type=number] {
+  padding: 15px;
+  height: 25px;
+  border-radius: 50px;
+  border: #550f4c 1px solid;
+  width: 25%;
+}
+main div.missing_form div.form form div:nth-child(8) div:nth-child(2) input[type=text] {
+  padding: 15px;
+  height: 25px;
+  border-radius: 50px;
+  border: #550f4c 1px solid;
+  width: 25%;
+}
+main div.missing_form div.form form div:nth-child(9) div:nth-child(1) .file {
+  border: 1px solid #550f4c;
+  display: inline-block;
+  width: 130px;
+  padding: 15px 15px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+main div.missing_form div.form form div:nth-child(9) div:nth-child(1) input[type=file] {
+  display: none;
+}
+main div.missing_form div.form form div:nth-child(9) div:nth-child(1) select {
+  border-radius: 50px;
+  width: 30%;
+  height: 59px;
+  border: 1px solid #550f4c;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("../assets/images/select.png") 85%/15% no-repeat #fff;
+  padding: 0px 0px 0px 20px;
+}
+main div.missing_form div.form form div:nth-child(9) div:nth-child(2) {
+  justify-content: space-evenly;
+}
+main div.missing_form div.form form div:nth-child(10) div {
+  justify-content: space-around;
+}
+main div.missing_form div.form form div:nth-child(11) {
+  justify-content: center;
+}
+main div.missing_form div.form form div:nth-child(11) textarea {
+  padding: 15px;
+  height: 300px;
+  border-radius: 20px;
+  border: #550f4c 1px solid;
+  width: 100%;
+}
+main div.missing_form div.form form div:nth-child(12) {
+  justify-content: flex-end;
+}
+main div.missing_form div.form form div:nth-child(12) button {
+  color: #fff;
+  text-decoration: none;
+  background-color: #276dd0;
+  padding: 22px 75px;
+  border-radius: 50px;
+  border: 1px solid #276dd0;
+  cursor: pointer;
+}
+main div.missing_form div.form form div:nth-child(12) button:hover {
+  background-color: #fff;
+  color: #550f4c;
+  border: 1px solid #550f4c;
+}
+
+label {
+  font-size: 0.9rem;
+  word-break: keep-all;
+}
+
+.label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #550f4c;
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+}
+
+/* On mouse-over, add a grey background color */
+.label:hover input ~ .checkmark {
+  background-color: #fff;
+}
+
+/* When the checkbox is checked, add a blue background */
+.label input:checked ~ .checkmark {
+  background-color: #550f4c;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.label input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.label .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+footer {
+  height: 100px;
+  width: 97%;
+  background-color: #550f4c;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 150px 0 0 0;
+}
+
+@media all and (max-width: 375px) {
+  header {
+    height: 225px;
+  }
+  header div.container {
+    flex-direction: column-reverse;
+    align-content: flex-start;
+    justify-content: center;
+    height: 300px;
+    flex-wrap: wrap;
+  }
+  main div.dash {
+    height: unset;
+  }
+  main div.dash div:nth-child(1) h1 {
+    font-size: 2.5rem;
+  }
+  body > main > div.dash > div.form > form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  body > main > div.dash > div.form > form input {
+    margin-bottom: 15px;
+  }
+  body > main > div.dash > div.form > form input:nth-child(1) {
+    border-radius: 0;
+  }
+  body > main > div.dash > div.form > form select {
+    border-radius: 0;
+  }
+  footer {
+    width: 89%;
+  }
+  footer div:nth-child(2) > p {
+    font-size: 0.9rem;
+  }
+  main div.missing_form div.form form div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}
+div nav ul.profil {
+  flex-direction: row-reverse !important;
+}
+div nav ul.profil li:nth-child(2) a {
+  margin-right: 50px;
+}
+
+main section > div:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+main section > div:nth-child(1) div:nth-child(1) {
+  flex: 0.8 0 0;
+}
+main section > div:nth-child(1) div:nth-child(2) {
+  flex: 1 2 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 500px;
+  color: #550f4c;
+}
+main section > div:nth-child(2) div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-end;
+}
+main section > div:nth-child(2) div form:nth-child(1) button {
+  margin-right: 20px;
+  padding: 15px 100px 15px 100px;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  border: 1px solid transparent;
+  background-color: #67d027;
+  color: #fff;
+}
+main section > div:nth-child(2) div form:nth-child(1) button:hover {
+  background-color: #fff;
+  color: #550f4c;
+  border: 1px solid #550f4c;
+}
+main section > div:nth-child(2) div form:nth-child(2) button {
+  color: #fff;
+  margin-left: 20px;
+  padding: 15px 100px 15px 100px;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  border: 1px solid transparent;
+  background-color: #d02d2d;
+}
+main section > div:nth-child(2) div form:nth-child(2) button:hover {
+  background-color: #fff;
+  color: #550f4c;
+  border: 1px solid #550f4c;
+}
+
+div#label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0 50px 0;
+}
+div#label div h1 {
+  color: #550f4c;
+}
+div#label article {
+  box-shadow: 0px 0px 20px 5px #550f4c;
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 25px 0;
+  border-radius: 35px;
+  padding: 50px 0;
+}
+div#label article > div:nth-child(1) h2 {
+  color: #550f4c;
+  padding: 0 0 0 50px;
+}
+div#label article > div:nth-child(1) h2 img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+div#label article > div:nth-child(2) {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px 0 0;
+}
+div#label article > div:nth-child(2) form > button {
+  border: 1px solid transparent;
+  background-color: #fff;
+  cursor: pointer;
+}
+div#label article:hover {
+  transform: translate(0, -5px);
+  transition: all 0.5s ease-in-out;
+}
+
+div#card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+div#card a {
+  text-decoration: none;
+}
+div#card a article.card {
+  border: 2px solid #550f4c;
+  background-color: #fff;
+  margin: 15px 15px;
+  border-radius: 30px;
+  width: 300px;
+  height: 100%;
+  box-shadow: 0px 0px 20px 5px #550f4c;
+}
+div#card a article.card:hover {
+  transform: scale(1.2);
+  transition: all 0.8s ease-in-out;
+}
+div#card a article.card div.card_img {
+  height: 200px;
+  width: 100%;
+}
+div#card a article.card div.card_img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+  object-fit: cover;
+}
+div#card a article.card div.card_text {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #550f4c;
+}
+div#card a article.card div.card_text p {
+  margin: 25px 15px;
+}
+div#card a article.card div.card_text p span:nth-child(4) {
+  color: #276dd0;
+}
+
+img#heart {
+  height: 20px;
+  width: 20px;
+  -webkit-animation: scale-up-center 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) infinite alternate both;
+  animation: scale-up-center 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) infinite alternate both;
+}
+
+section#search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+section#search a {
+  text-decoration: none;
+}
+section#search a article.card {
+  border: 2px solid #550f4c;
+  background-color: #fff;
+  margin: 15px 15px;
+  border-radius: 30px;
+  width: 300px;
+  height: 100%;
+  box-shadow: 0px 0px 20px 5px #550f4c;
+}
+section#search a article.card:hover {
+  transform: scale(1.2);
+  transition: all 0.8s ease-in-out;
+}
+section#search a article.card div.card_img {
+  height: 200px;
+  width: 100%;
+}
+section#search a article.card div.card_img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+  object-fit: cover;
+}
+section#search a article.card div.card_text {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #550f4c;
+}
+section#search a article.card div.card_text p {
+  margin: 25px 15px;
+}
+section#search a article.card div.card_text p span:nth-child(3) > img {
+  height: 20px;
+  width: 20px;
+  -webkit-animation: scale-up-center 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) infinite alternate both;
+  animation: scale-up-center 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) infinite alternate both;
+}
+section#search a article.card div.card_text p span:nth-child(4) {
+  color: #276dd0;
+}
+
+div#register > div,
+div#login > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+div#register > div h1,
+div#login > div h1 {
+  color: #550f4c;
+  text-align: center;
+}
+div#register > div form,
+div#login > div form {
+  border: 1px solid #550f4c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 375px;
+  padding: 50px;
+  border-radius: 30px;
+}
+div#register > div form div:not(:last-child),
+div#login > div form div:not(:last-child) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+div#register > div form div:not(:last-child) label,
+div#login > div form div:not(:last-child) label {
+  font-size: 0.8rem;
+  color: #550f4c;
+}
+div#register > div form div:not(:last-child) input[type=text],
+div#register > div form div:not(:last-child) input[type=password],
+div#login > div form div:not(:last-child) input[type=text],
+div#login > div form div:not(:last-child) input[type=password] {
+  padding: 15px;
+  height: 25px;
+  border-radius: 50px;
+  border: #550f4c 1px solid;
+  width: 240px;
+  margin: 0 0 5px 0;
+}
+div#register > div form div:last-child,
+div#login > div form div:last-child {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+div#register > div form div:last-child button,
+div#login > div form div:last-child button {
+  color: #fff;
+  text-decoration: none;
+  background-color: #276dd0;
+  padding: 22px 75px;
+  border-radius: 50px;
+  border: #fff 1px solid;
+}
+div#register > div form div:last-child button:hover,
+div#login > div form div:last-child button:hover {
+  background-color: #fff;
+  color: #550f4c;
+  border: #550f4c 1px solid;
+}
+
+main#profil {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+main#profil aside {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: stretch;
+  width: 330px;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+main#profil aside div img {
+  height: 325px;
+  width: 325px;
+  object-fit: cover;
+  filter: grayscale(1);
+}
+main#profil aside div img:hover {
+  transform: scale(1.5);
+  filter: grayscale(0);
+  transition: all 0.8s ease-in-out;
+  border-radius: 30px;
+  cursor: zoom-in;
+}
+main#profil aside div:nth-child(2) {
+  background-color: #550f4c;
+  color: #fff;
+  font-size: 1.2rem;
+  width: 305px;
+  padding: 10px;
+}
+main#profil section#info {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+  width: 980px;
+}
+main#profil section#info div:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #550f4c;
+}
+main#profil section#info div:nth-child(1) > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 50%;
+}
+main#profil section#info div:nth-child(1) > div:nth-child(1) p {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+main#profil section#info div:nth-child(1) > div:nth-child(1) p span {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+main#profil section#info div:nth-child(1) > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex: 0.8 0 0;
+  height: unset;
+  width: 50%;
+}
+main#profil section#info div:nth-child(1) > div:nth-child(2) p {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+main#profil section#info div:nth-child(1) > div:nth-child(2) p span {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+main#profil section#info > div:nth-child(2) {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #550f4c;
+}
+
+/*# sourceMappingURL=style.css.map */
