@@ -14,7 +14,7 @@ Mafkoud is a Web site made to help people find thier missing person in Algeria !
 
 ## Appendix
 
-Yopu find The video of presentation in ./assets folder ... 
+You find The video of presentation in ./assets folder ... 
 
 
 ## Tech Stack
